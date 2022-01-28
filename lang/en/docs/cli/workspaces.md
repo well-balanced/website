@@ -15,16 +15,16 @@ To learn more about workspaces, check these links:
 
 ### Commands <a class="toc" id="toc-commands" href="#toc-commands"></a>
 
-##### `yarn workspaces info [--json]` <a class="toc" id="toc-yarn-workspaces-info" href="#toc-yarn-workspaces-info"></a>
+##### `yarn workspace info [--json]` <a class="toc" id="toc-yarn-workspaces-info" href="#toc-yarn-workspaces-info"></a>
 
 This command will display the workspace dependency tree of your current project.
 
 ```sh
-yarn workspaces info
+yarn workspace info
 ```
 
 ```
-yarn workspaces vx.x.x
+yarn workspace vx.x.x
 { "create-subscription": {
     "location": "packages/create-subscription",
     "workspaceDependencies": [],
@@ -45,12 +45,12 @@ yarn workspaces vx.x.x
   }, ... }
 ```
 
-##### `yarn workspaces run <command>` <a class="toc" id="toc-yarn-workspaces-run" href="#toc-yarn-workspaces-run"></a>
+##### `yarn workspace run <command>` <a class="toc" id="toc-yarn-workspace-run" href="#toc-yarn-workspace-run"></a>
 
 This will run the chosen Yarn command in each workspace.
 
 ```sh
-yarn workspaces run test
+yarn workspace run test
 ```
 
 This will invoke the test script for each workspace.
@@ -58,5 +58,5 @@ This will invoke the test script for each workspace.
 This will also pass forward flags and can be useful for CI processes.
 
 ```sh
-yarn workspaces run test --ci
+yarn workspace run test --ci
 ```
